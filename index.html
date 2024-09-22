@@ -5,44 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Hossam Elhetemy Portfolio</title>
     <style>
-        /* Global Styles */
+        /* Global Styling */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(120deg, #1d1f21, #4a5668);
+            color: #ffffff;
         }
+
+        /* Container Styling */
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #e74c3c;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
         }
 
         /* Header Section */
         .header {
             text-align: center;
             padding: 50px 0;
-            background-color: #1e1e1e;
-            border-bottom: 2px solid #e74c3c;
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+            border-bottom: 5px solid #e74c3c;
         }
+
         .header h1 {
             margin: 0;
-            font-size: 3em;
-            letter-spacing: 1px;
+            font-size: 3.5em;
+            letter-spacing: 2px;
         }
+
         .header p {
-            margin: 5px;
+            margin: 10px 0;
+            font-size: 1.2em;
         }
 
         /* Profile Image */
@@ -53,32 +48,60 @@
             margin: 20px auto;
             border: 5px solid #e74c3c;
             object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+
+        /* Button Styling */
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 15px;
+            color: #ffffff;
+            background-color: #e74c3c;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #c0392b;
         }
 
         /* Content Section */
         .content {
-            background-color: #1e1e1e;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            animation: fadeInUp 1s ease-in-out;
+            background-color: #2f3640;
+            padding: 40px;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
+
+        h2 {
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         ul li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         /* Footer */
         .footer {
             text-align: center;
             padding: 20px;
-            background-color: #1e1e1e;
-            margin-top: 40px;
-            border-top: 2px solid #e74c3c;
+            background-color: #1d1f21;
+            color: #bdc3c7;
+            border-top: 3px solid #e74c3c;
         }
 
         /* Animations */
@@ -92,21 +115,6 @@
                 transform: translateY(0);
             }
         }
-
-        /* Button Styles */
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            color: #fff;
-            background-color: #e74c3c;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #c0392b;
-        }
-
     </style>
 </head>
 <body>
@@ -114,7 +122,7 @@
 <div class="header">
     <img src="https://github.com/AhmedHossam23/AhmedHossam23.github.io/blob/main/IMG_1321.jpeg" alt="Ahmed Hossam Elhetemy" class="profile-pic">
     <h1>Ahmed Hossam Elhetemy</h1>
-    <p>Email: <a href="mailto:aelhetemy@gmail.com">aelhetemy@gmail.com</a></p>
+    <p>Email: <a href="mailto:aelhetemy@gmail.com" class="button">aelhetemy@gmail.com</a></p>
     <p>Location: Nasr City, Cairo</p>
     <p>
         <a href="https://github.com/AhmedHossam23" class="button">GitHub</a>
@@ -124,12 +132,12 @@
 
 <div class="container">
     <div class="content">
-        <section class="section">
+        <section>
             <h2>Objective</h2>
             <p>Passionate Machine Learning Engineer with a deep understanding of mathematical principles and a strong foundation in NLP. Driven by a love for problem-solving, I excel at developing and deploying data-driven solutions that optimize cost and performance.</p>
         </section>
 
-        <section class="section">
+        <section>
             <h2>Education</h2>
             <ul>
                 <li><strong>Bachelor of Engineering - Electronics and Communications</strong>, Mansoura University (2020 - 2025)</li>
@@ -137,7 +145,7 @@
             </ul>
         </section>
 
-        <section class="section">
+        <section>
             <h2>Experience</h2>
             <h3>Machine Learning Contributor, Unify (08/2024 – 11/2024)</h3>
             <ul>
@@ -161,37 +169,37 @@
             </ul>
         </section>
 
-        <section class="section">
+        <section>
             <h2>Projects</h2>
             <h3>Custom Business Chatbot</h3>
             <ul>
                 <li>Developed a RAG system for business document retrieval and KPI extraction.</li>
                 <li>Optimized latency for fast responses and cost-efficiency using local LLMs.</li>
-                <li><a href="https://github.com/AhmedHossam23/datatalk/blob/main/ABGbot.py">Project Link</a></li>
+                <li><a href="https://github.com/AhmedHossam23/datatalk/blob/main/ABGbot.py" class="button">Project Link</a></li>
             </ul>
 
             <h3>Real-time Earthquake Prediction System</h3>
             <ul>
                 <li>Built an ETL pipeline and applied statistical analysis to optimize model performance.</li>
                 <li>Increased model accuracy by 7% using voting regressor techniques.</li>
-                <li><a href="https://github.com/MohamedElweza/Earthquake_app/tree/main/Ai">Project Link</a></li>
+                <li><a href="https://github.com/MohamedElweza/Earthquake_app/tree/main/Ai" class="button">Project Link</a></li>
             </ul>
 
             <h3>Student Attendance System</h3>
             <ul>
                 <li>Reduced cost by 80% through ESP-32 camera vision management.</li>
-                <li><a href="https://github.com/AhmedHossam23/Attendance_with_DL">Project Link</a></li>
+                <li><a href="https://github.com/AhmedHossam23/Attendance_with_DL" class="button">Project Link</a></li>
             </ul>
 
             <h3>Touch Vision AI Assistant</h3>
             <ul>
                 <li>Developed a mobile app that assists impaired individuals using voice response systems.</li>
                 <li>Reduced response time by 40% through latency optimizations.</li>
-                <li><a href="https://github.com/MohamedElweza/TouchVision/tree/main/ai">Project Link</a></li>
+                <li><a href="https://github.com/MohamedElweza/TouchVision/tree/main/ai" class="button">Project Link</a></li>
             </ul>
         </section>
 
-        <section class="section">
+        <section>
             <h2>Skills</h2>
             <ul>
                 <li>Python, TensorFlow, Keras, scikit-learn</li>
@@ -199,15 +207,6 @@
                 <li>FastAPI, LangChain</li>
                 <li>Docker, Git, Firebase, SQL</li>
                 <li>Java, Microsoft Power BI</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>Extracurricular Activities</h2>
-            <p><strong>Machine Learning and Deep Learning Supervisor</strong>, Octware Student Activity (04/2023 – Present)</p>
-            <ul>
-                <li>Delivered sessions on machine learning concepts and mathematics.</li>
-                <li>Reviewed and debugged assignments for team members.</li>
             </ul>
         </section>
     </div>
