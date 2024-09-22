@@ -18,7 +18,6 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            animation: fadeIn 1.5s ease-out;
         }
 
         /* Header Section */
@@ -33,7 +32,6 @@
             margin: 0;
             font-size: 3.5em;
             letter-spacing: 2px;
-            animation: fadeInDown 1.5s ease-out;
         }
 
         .header p {
@@ -50,11 +48,6 @@
             border: 5px solid #2980b9;
             object-fit: cover;
             transition: transform 0.3s ease;
-            animation: rotateIn 1.5s ease;
-        }
-
-        .profile-pic:hover {
-            transform: scale(1.1);
         }
 
         /* Button Styling */
@@ -89,37 +82,25 @@
             margin-bottom: 20px;
         }
 
-        ul {
-            list-style-type: none;
+        .details {
+            margin-bottom: 25px;
+            line-height: 1.8em;
+        }
+
+        .details img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .skills-section ul {
+            list-style: none;
             padding: 0;
         }
 
-        ul li {
+        .skills-section li {
             margin-bottom: 15px;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.8s forwards;
-        }
-
-        /* Skill Bar */
-        .skills {
-            display: block;
-            width: 100%;
-            background-color: #34495e;
-            border-radius: 25px;
-            margin-bottom: 10px;
-            position: relative;
-        }
-
-        .skill-level {
-            height: 25px;
-            background-color: #2980b9; /* Blue skill bar */
-            border-radius: 25px;
-            width: 0;
-            text-align: right;
-            padding-right: 10px;
-            color: white;
-            animation: loadSkill 2s ease-out forwards;
         }
 
         /* Footer */
@@ -129,47 +110,6 @@
             background-color: #121212;
             color: #bdc3c7;
             border-top: 3px solid #2980b9;
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes rotateIn {
-            from {
-                transform: rotate(-180deg);
-            }
-            to {
-                transform: rotate(0deg);
-            }
-        }
-
-        @keyframes loadSkill {
-            from {
-                width: 0;
-            }
-            to {
-                width: var(--width);
-            }
         }
     </style>
 </head>
@@ -188,42 +128,72 @@
 
 <div class="container">
     <div class="content">
+        <!-- Objective Section -->
         <section>
             <h2>Objective</h2>
-            <p>Passionate Machine Learning Engineer with a deep understanding of mathematical principles and a strong foundation in NLP...</p>
+            <p>I am a passionate Machine Learning Engineer with a deep understanding of mathematical principles and expertise in natural language processing (NLP), time series forecasting, and computer vision. I am experienced in delivering end-to-end machine learning solutions using state-of-the-art deep learning models and ML tools.</p>
         </section>
 
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/python.svg" alt="Python Logo"> Python</li>
+                <li><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/tensorflow.svg" alt="TensorFlow Logo"> TensorFlow</li>
+                <li><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/fastapi.svg" alt="FastAPI Logo"> FastAPI</li>
+                <li><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/docker.svg" alt="Docker Logo"> Docker</li>
+                <li><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/postgresql.svg" alt="PostgreSQL Logo"> PostgreSQL</li>
+                <li><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/git.svg" alt="Git Logo"> Git & GitHub</li>
+            </ul>
+        </section>
+
+        <!-- Experience Section -->
         <section>
-            <h2>Skills</h2>
-            <div class="skills">
-                <div class="skill-level" style="--width: 90%;">Python</div>
+            <h2>Work Experience</h2>
+            <div class="details">
+                <h3>Machine Learning Engineer</h3>
+                <p><strong>Company Name:</strong> XYZ Corp.</p>
+                <p><strong>Duration:</strong> Jan 2022 - Present</p>
+                <p><strong>Responsibilities:</strong> Built and deployed scalable machine learning models for time series forecasting and NLP applications. Developed pipelines using Docker and Kubernetes to automate training and inference tasks.</p>
             </div>
-            <div class="skills">
-                <div class="skill-level" style="--width: 80%;">TensorFlow</div>
-            </div>
-            <div class="skills">
-                <div class="skill-level" style="--width: 85%;">FastAPI</div>
+
+            <div class="details">
+                <h3>Software Developer</h3>
+                <p><strong>Company Name:</strong> ABC Solutions</p>
+                <p><strong>Duration:</strong> June 2019 - Dec 2021</p>
+                <p><strong>Responsibilities:</strong> Designed and implemented web applications using FastAPI and integrated them with databases like PostgreSQL. Improved CI/CD pipelines for faster releases.</p>
             </div>
         </section>
 
-        <!-- Add more sections for education, projects, etc. with similar style -->
+        <!-- Education Section -->
+        <section>
+            <h2>Education</h2>
+            <div class="details">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p><strong>University Name:</strong> Cairo University</p>
+                <p><strong>Year of Graduation:</strong> 2019</p>
+            </div>
+        </section>
 
+        <!-- Projects Section -->
+        <section>
+            <h2>Projects</h2>
+            <div class="details">
+                <h3>Sentiment Analysis of Social Media Posts</h3>
+                <p>Developed a sentiment analysis tool that classifies the mood of social media posts using NLP and deep learning models.</p>
+            </div>
+
+            <div class="details">
+                <h3>Time Series Forecasting for Sales Data</h3>
+                <p>Implemented machine learning models to forecast sales and optimize inventory management based on predictive analysis.</p>
+            </div>
+        </section>
     </div>
 </div>
 
 <div class="footer">
     <p>&copy; 2024 Ahmed Hossam Elhetemy</p>
 </div>
-
-<script>
-    // Adding dynamic behavior using JS for skill bars
-    document.addEventListener('DOMContentLoaded', function() {
-        const skillBars = document.querySelectorAll('.skill-level');
-        skillBars.forEach(bar => {
-            bar.style.width = bar.getAttribute('style').split(': ')[1];
-        });
-    });
-</script>
 
 </body>
 </html>
