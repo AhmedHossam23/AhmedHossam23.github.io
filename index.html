@@ -10,10 +10,11 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #0d0d0d, #1c1c1c); /* Darker tones */
+            background: linear-gradient(120deg, #121212, #2d3436); /* Dark theme with a gradient */
             color: #ffffff;
         }
 
+        /* Container Styling */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -24,8 +25,8 @@
         .header {
             text-align: center;
             padding: 50px 0;
-            background: linear-gradient(45deg, #0e0e0e, #2c3e50); /* Darker gradient */
-            border-bottom: 5px solid #2980b9;
+            background: linear-gradient(45deg, #1e272e, #34495e); /* Dark gradient background */
+            border-bottom: 5px solid #2ecc71; /* Subtle green accent */
         }
 
         .header h1 {
@@ -45,32 +46,35 @@
             height: 150px;
             border-radius: 50%;
             margin: 20px auto;
-            border: 5px solid #2980b9;
+            border: 5px solid #2ecc71;
             object-fit: cover;
             transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1);
         }
 
         /* Button Styling */
         .button {
             display: inline-block;
             padding: 12px 25px;
-            margin: 15px;
+            margin: 15px 0;
             color: #ffffff;
-            background-color: #2980b9; /* Blue button color */
+            background-color: #3498db; /* Professional blue tone */
             border-radius: 30px;
             text-decoration: none;
             font-size: 1.1em;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            transition: background-color 0.3s ease;
         }
 
         .button:hover {
-            background-color: #1b4f72;
-            transform: scale(1.05);
+            background-color: #2980b9;
         }
 
         /* Content Section */
         .content {
-            background-color: #1b1b1b; /* Dark content background */
+            background-color: #2f3640;
             padding: 40px;
             margin: 30px 0;
             border-radius: 15px;
@@ -78,21 +82,16 @@
         }
 
         h2 {
-            color: #2980b9; /* Accent with blue */
+            color: #2ecc71; /* Subtle green accent */
             margin-bottom: 20px;
         }
 
-        .details {
-            margin-bottom: 25px;
-            line-height: 1.8em;
-        }
-
-        .skills-section ul {
-            list-style: none;
+        ul {
+            list-style-type: none;
             padding: 0;
         }
 
-        .skills-section li {
+        ul li {
             margin-bottom: 15px;
         }
 
@@ -102,116 +101,101 @@
             padding: 20px;
             background-color: #121212;
             color: #bdc3c7;
-            border-top: 3px solid #2980b9;
+            border-top: 3px solid #2ecc71;
         }
     </style>
 </head>
 <body>
 
 <div class="header">
-    <img src="https://raw.githubusercontent.com/AhmedHossam23/AhmedHossam23.github.io/main/yourphoto.jpg" alt="Ahmed Hossam Elhetemy" class="profile-pic">
+    <img src="https://raw.githubusercontent.com/AhmedHossam23/AhmedHossam23.github.io/refs/heads/main/IMG_1321.jpeg" alt="Ahmed Hossam Elhetemy" class="profile-pic">
     <h1>Ahmed Hossam Elhetemy</h1>
     <p>Email: <a href="mailto:aelhetemy@gmail.com" class="button">aelhetemy@gmail.com</a></p>
     <p>Location: Nasr City, Cairo</p>
     <p>
         <a href="https://github.com/AhmedHossam23" class="button">GitHub</a>
-        <a href="https://www.linkedin.com/in/ahmed-hossam/" class="button">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/ahmed-hossam-/" class="button">LinkedIn</a>
     </p>
 </div>
 
 <div class="container">
     <div class="content">
-        <!-- Objective Section -->
         <section>
             <h2>Objective</h2>
-            <p>Passionate Machine Learning Engineer with a deep understanding of mathematical principles and a strong foundation in NLP. Driven by a love for problem-solving, I excel at developing and deploying data-driven solutions that optimize cost and performance. Known for my attention to detail, collaborative spirit, and commitment to delivering impactful results.</p>
+            <p>Passionate Machine Learning Engineer with a deep understanding of mathematical principles and a strong foundation in NLP. Driven by a love for problem-solving, I excel at developing and deploying data-driven solutions that optimize cost and performance.</p>
         </section>
 
-        <!-- Skills Section -->
-        <section class="skills-section">
-            <h2>Technical Skills</h2>
+        <section>
+            <h2>Education</h2>
             <ul>
-                <li>Python</li>
-                <li>TensorFlow</li>
-                <li>FastAPI</li>
-                <li>Docker</li>
-                <li>SQL</li>
-                <li>Git & GitHub</li>
-                <li>Pandas, NumPy</li>
-                <li>scikit-learn</li>
-                <li>Microsoft Power BI</li>
+                <li><strong>Bachelor of Engineering - Electronics and Communications</strong>, Mansoura University (2020 - 2025)</li>
+                <li>Grade: Very Good</li>
             </ul>
         </section>
 
-        <!-- Experience Section -->
         <section>
-            <h2>Work Experience</h2>
-            <div class="details">
-                <h3>Machine Learning Contributor</h3>
-                <p><strong>Company:</strong> Unify</p>
-                <p><strong>Duration:</strong> 08/2024 – 11/2024</p>
-                <p><strong>Responsibilities:</strong> Implemented `svdvals` function and handled driver in PyTorch across various backends.</p>
-            </div>
+            <h2>Experience</h2>
+            <h3>Machine Learning Contributor, Unify (08/2024 – 11/2024)</h3>
+            <ul>
+                <li>Implemented `svdvals` function and handled driver in PyTorch and different backends to make the feature available for multiple frameworks.</li>
+            </ul>
 
-            <div class="details">
-                <h3>Machine Learning Intern</h3>
-                <p><strong>Company:</strong> fellowship.ai</p>
-                <p><strong>Duration:</strong> 07/2023 – 11/2023</p>
-                <p><strong>Responsibilities:</strong> Developed an autonomous intelligent travel agent, integrated LLMs and API tools with the chatbot.</p>
-            </div>
+            <h3>Machine Learning Intern, fellowship.ai (07/2023 – 11/2023)</h3>
+            <ul>
+                <li>Developed a fully autonomous intelligent travel agent integrating LLMs (Llama 2) and API tools with chatbot functionality.</li>
+                <li>Used LangChain for memory to enhance chatbot action decision-making.</li>
+            </ul>
 
-            <div class="details">
-                <h3>Artificial Intelligence Training</h3>
-                <p><strong>Institution:</strong> National Telecommunication Institute (NTI)</p>
-                <p><strong>Duration:</strong> 08/2022 – 09/2022</p>
-                <p><strong>Responsibilities:</strong> Implemented deep learning architectures for image classification and NLP.</p>
-            </div>
+            <h3>Artificial Intelligence Training, NTI (08/2022 – 09/2022)</h3>
+            <ul>
+                <li>Implemented CNNs and RNNs for image classification and natural language processing tasks.</li>
+            </ul>
 
-            <div class="details">
-                <h3>Basic Automation Internship</h3>
-                <p><strong>Company:</strong> Siemens Energy</p>
-                <p><strong>Duration:</strong> 07/2022 – 08/2022</p>
-                <p><strong>Responsibilities:</strong> Worked on hardware design for control units and developed a PLC program for material sorting.</p>
-            </div>
+            <h3>Basic Automation Intern, Siemens Energy (07/2022 – 08/2022)</h3>
+            <ul>
+                <li>Designed hardware for control units and programmed PLC to sort materials using sensors.</li>
+            </ul>
         </section>
 
-        <!-- Education Section -->
-        <section>
-            <h2>Education</h2>
-            <div class="details">
-                <h3>Bachelor of Engineering in Electronics and Communications</h3>
-                <p><strong>University:</strong> Mansoura University</p>
-                <p><strong>Year of Graduation:</strong> 2025</p>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
         <section>
             <h2>Projects</h2>
-            <div class="details">
-                <h3>Chatbot for Custom Business</h3>
-                <p>Built RAG system for documents, integrated with Q&A and business KPIs extraction.</p>
-            </div>
+            <h3>Custom Business Chatbot</h3>
+            <ul>
+                <li>Developed a RAG system for business document retrieval and KPI extraction.</li>
+                <li>Optimized latency for fast responses and cost-efficiency using local LLMs.</li>
+                <li><a href="https://github.com/AhmedHossam23/datatalk/blob/main/ABGbot.py" class="button">View Project</a></li>
+            </ul>
 
-            <div class="details">
-                <h3>Real-time Earthquake Prediction System</h3>
-                <p>Developed an integrated system with a mobile app, optimized model performance by 7%.</p>
-            </div>
+            <h3>Real-time Earthquake Prediction System</h3>
+            <ul>
+                <li>Built an ETL pipeline and applied statistical analysis to optimize model performance.</li>
+                <li>Increased model accuracy by 7% using voting regressor techniques.</li>
+                <li><a href="https://github.com/MohamedElweza/Earthquake_app/tree/main/Ai" class="button">View Project</a></li>
+            </ul>
 
-            <div class="details">
-                <h3>Student Attendance System</h3>
-                <p>Reduced costs by nearly 80% using vision processing through ESP-32 camera.</p>
-            </div>
+            <h3>Student Attendance System</h3>
+            <ul>
+                <li>Reduced cost by 80% through ESP-32 camera vision management.</li>
+                <li><a href="https://github.com/AhmedHossam23/Attendance_with_DL" class="button">View Project</a></li>
+            </ul>
 
-            <div class="details">
-                <h3>Touch Vision, AI Assistant</h3>
-                <p>Developed a mobile application to assist impaired individuals using voice response.</p>
-            </div>
+            <h3>Touch Vision AI Assistant</h3>
+            <ul>
+                <li>Developed a mobile app that assists impaired individuals using voice response systems.</li>
+                <li>Reduced response time by 40% through latency optimizations.</li>
+                <li><a href="https://github.com/MohamedElweza/TouchVision/tree/main/ai" class="button">View Project</a></li>
+            </ul>
+        </section>
 
-            <div class="details">
-                <h3>Recycling Automation and Optimization</h3>
-                <p>Customized YOLO-v8 for material identification and integrated with mechanical systems.</p>
-            </div>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Python, TensorFlow, Keras, scikit-learn</li>
+                <li>Pandas, NumPy, Streamlit</li>
+                <li>FastAPI, LangChain</li>
+                <li>Docker, Git, Firebase, SQL</li>
+                <li>Java, Microsoft Power BI</li>
+            </ul>
         </section>
     </div>
 </div>
